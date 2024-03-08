@@ -64,10 +64,8 @@ a:active {
 }
 
 .centerfigure {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 640;
+  display: flex;
+  justify-content: center;
 }
 
 .footerfontstyle {
