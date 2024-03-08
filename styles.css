@@ -12,6 +12,12 @@ h1 {
 }
 
 h2 {
+  text-align: center;
+  color: yellow;
+  font-family: Arial, monospace;
+}
+
+h3 {
   color: yellow;
   font-family: Arial, monospace;
 }
