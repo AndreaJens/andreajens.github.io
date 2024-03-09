@@ -130,6 +130,46 @@ a:active {
   font-weight: bold;
 }
 
+a.incompletelink:link { 
+	color: #E6E6E6;
+	font-weight: normal;
+}
+
+a.incompletelink:visited { 
+	color: #E6E6E6;
+	font-weight: normal;
+}
+
+a.incompletelink:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
+a.incompletelink:active {
+  color: yellow;
+  font-weight: bold;
+}
+
+a.completelink:link { 
+	color: white;
+	font-weight: normal;
+}
+
+a.completelink:visited { 
+	color: white;
+	font-weight: normal;
+}
+
+a.completelink:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
+a.completelink:active {
+  color: yellow;
+  font-weight: bold;
+}
+
 .topnav {
   background-color: black;
   overflow: hidden;
