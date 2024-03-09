@@ -21,7 +21,7 @@ function addBottomBar(textToDisplay){
 	let div = document.createElement('div');
 	div.classList.add('bottomnav')
 	var paragraph = document.createElement("p");
-	paragraph.textContent = textToDisplay
+	paragraph.textContent = "Andrea Demetrio - " + textToDisplay
 	div.append(paragraph);
 	document.body.appendChild(div)
 }
