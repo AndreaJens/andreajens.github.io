@@ -249,4 +249,13 @@ a.completelink:active {
 	  font-size: 48px;
 	  text-decoration: none;
 	}
+	
+	.text-container {
+	  text-align: left;
+	}
+	
+	.bottomnav {
+	  font-size: 32px;
+	}
+	
 }
