@@ -290,4 +290,10 @@ a.completelink:active {
 	  margin-left: 0%;
 	  margin-right: 0%;
 	}
+	
+	.containerToC {
+	  display: block;
+	  margin-left: 5%;
+	  margin-right: 5%;
+	}
 }
