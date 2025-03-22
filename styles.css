@@ -101,6 +101,19 @@ a:active {
   margin-right: 20%;
 }
 
+.horizontal_pic_container {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.horizontal_pic_container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+
 .allButFooter {
     min-height: calc(100vh - 40px);
 }
@@ -272,4 +285,9 @@ a.completelink:active {
 	.bottomnav a{
 	  font-size: 32px;
 	}	
+	
+	.horizontal_pic_container {
+	  margin-left: 0%;
+	  margin-right: 0%;
+	}
 }
