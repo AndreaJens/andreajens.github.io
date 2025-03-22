@@ -77,6 +77,12 @@ a:active {
   justify-content: center;
 }
 
+.containerToC {
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .footerfontstyle {
  font-family: Arial;
  font-size: 14px;
