@@ -106,18 +106,24 @@ a:active {
   width: 100%;
   bottom:0;
   text-align: center;
-  display:flex;
+  display:block;
   justify-content:center;
+  align-items: center; 
+}
+
+.bottomnav p{
+  width: 100%;
+  text-align: center;
 }
 
 .bottomnav a {
   font-family: Arial;
-  float: left;
+  /* float: left; */
   color: white;
   font-weight: normal;
   text-align: center;
   padding: 10px 20px;
-  font-size: 18px;
+  /* font-size: 18px; */
   text-decoration: none;
 }
 
@@ -253,9 +259,11 @@ a.completelink:active {
 	.text-container {
 	  text-align: left;
 	}
-	
+
 	.bottomnav {
 	  font-size: 32px;
 	}
-	
+	.bottomnav a{
+	  font-size: 32px;
+	}	
 }
