@@ -57,6 +57,14 @@ a:active {
   width: 640;
 }
 
+.centercontacts {
+  margin-top: 42px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 640;
+}
+
 .centerservices {
   display: block;
   margin-left: auto;
@@ -258,6 +266,14 @@ a.completelink:active {
 	  margin-right: 5%;
 	}
 	.center {
+	  margin-top: 64px;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 640;
+	}
+	.centercontacts {
+	  font-size: 28px;
 	  margin-top: 64px;
 	  display: block;
 	  margin-left: auto;
