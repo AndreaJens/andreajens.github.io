@@ -77,3 +77,34 @@ function addBottomAllLinks(mainText, linkPrevious, titlePrevious, linkNext, titl
 	div.append(paragraph2);
 	document.body.appendChild(div)
 }
+
+function addBottomAllLinksDummy(mainText, linkPrevious, titlePrevious, linkNext, titleNext, indexLink, indexText){
+	let linkElemPrev = document.createElement('a');
+	let anchorTextPrev = document.createTextNode('< PREVIOUS');
+	linkElemPrev.appendChild(anchorTextPrev);
+	linkElemPrev.title = titlePrevious;
+	linkElemPrev.href = linkPrevious;
+	let linkElemNext = document.createElement('a');
+	let anchorTextNext = document.createTextNode('   (SOON) >');
+	linkElemNext.appendChild(anchorTextNext);
+	linkElemNext.title = "Coming next week!";
+	linkElemNext.href = "#";
+	let div = document.createElement('div');
+	div.classList.add('bottomnav')
+	let linkElemIndex = document.createElement('a');
+	let anchorTextIndex = document.createTextNode('INDEX');
+	linkElemIndex.appendChild(anchorTextIndex);
+	linkElemIndex.title = indexText;
+	linkElemIndex.href = indexLink + "#TOC";
+	var paragraph = document.createElement("p");
+	var paragraph2 = document.createElement("p");
+	paragraph.textContent = mainText;
+	//paragraph.display = "block";
+	//paragraph.append(document.createElement('br'));
+	paragraph2.append(linkElemPrev);
+	paragraph2.append(linkElemIndex);
+	paragraph2.append(linkElemNext);
+	div.append(paragraph);
+	div.append(paragraph2);
+	document.body.appendChild(div)
+}
