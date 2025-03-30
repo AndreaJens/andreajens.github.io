@@ -78,7 +78,7 @@ function addBottomAllLinks(mainText, linkPrevious, titlePrevious, linkNext, titl
 	document.body.appendChild(div)
 }
 
-function addBottomAllLinksEnding(mainText, linkPrevious, titlePrevious,indexLink, indexText){
+function addBottomAllLinksEnding(mainText, linkPrevious, titlePrevious, indexLink, indexText){
 	let linkElemPrev = document.createElement('a');
 	let anchorTextPrev = document.createTextNode('< PREVIOUS');
 	linkElemPrev.appendChild(anchorTextPrev);
@@ -101,7 +101,7 @@ function addBottomAllLinksEnding(mainText, linkPrevious, titlePrevious,indexLink
 	//paragraph.append(document.createElement('br'));
 	paragraph2.append(linkElemPrev);
 	paragraph2.append(linkElemIndex);
-	paragraph2.append(linkElemNext);
+	//paragraph2.append(linkElemNext);
 	div.append(paragraph);
 	div.append(paragraph2);
 	document.body.appendChild(div)
