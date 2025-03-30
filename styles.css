@@ -29,6 +29,21 @@ p {
   line-height: 1.2
 }
 
+mark {
+  background-color: white;
+  color: white;
+}
+
+mark::-moz-selection {
+  background-color: white;
+  color: white;
+}
+
+mark::selection {
+  background-color: white;
+  color: white;
+}
+
 a:link {
   color: white;
   font-weight: bold;
