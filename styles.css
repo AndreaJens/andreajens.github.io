@@ -11,19 +11,24 @@ h1 {
   text-align: center;
   color: yellow;
   font-family: Arial;
+  font-size: 2rem;
 }
 
 h2 {
   text-align: center;
   color: yellow;
   font-family: Arial;
+  font-size: 1.5rem;
 }
 
 h3 {
   color: yellow;
   font-family: Arial;
+  font-size: 1.3rem;
 }
 p {
+  /*text-align: justify;*/
+  /*text-justify: inter-word;*/
   color: white;
   font-family: Arial;
   line-height: 1.2
@@ -114,7 +119,7 @@ a:active {
 
 .footerfontstyle {
  font-family: Arial;
- font-size: 14px;
+ font-size: 1rem;
  font-style: normal;
  font-weight: bold;
  color: white;
@@ -242,7 +247,7 @@ a.completelink:active {
   font-weight: normal;
   text-align: center;
   padding: 10px 20px;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -274,10 +279,10 @@ a.completelink:active {
 
 /* For Mobile */
 @media only screen and (max-width:1024px) {
-	body {
-	  background-color: #313338;
-	  text-align: left;
-	}
+	/* body { */
+	  /* background-color: #313338; */
+	  /* text-align: left; */
+	/* } */
     .container {
 	  margin-top: 100px;
 	  display: flex;
@@ -294,7 +299,7 @@ a.completelink:active {
 	  width: 640;
 	}
 	.centercontacts {
-	  font-size: 28px;
+	  font-size: 1.8rem;
 	  margin-top: 64px;
 	  display: block;
 	  margin-left: auto;
@@ -308,7 +313,7 @@ a.completelink:active {
 	  font-weight: normal;
 	  text-align: center;
 	  padding: 20px 20px;
-	  font-size: 48px;
+	  font-size: 3rem;
 	  text-decoration: none;
 	}
 	
@@ -317,10 +322,10 @@ a.completelink:active {
 	}
 
 	.bottomnav {
-	  font-size: 32px;
+	  font-size: 2rem;
 	}
 	.bottomnav a{
-	  font-size: 32px;
+	  font-size: 2rem;
 	}	
 	
 	.horizontal_pic_container {
