@@ -26,6 +26,11 @@ h3 {
   font-family: Arial;
   font-size: 1.3rem;
 }
+summary {
+  color: yellow;
+  font-family: Arial;
+  font-size: 1.3rem;
+}
 p {
   /*text-align: justify;*/
   /*text-justify: inter-word;*/
