@@ -1,3 +1,7 @@
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 main {
   flex: 1;
 }
@@ -6,6 +10,7 @@ body {
   background-color: #313338;
   text-align: justify;
   text-justify: inter-word;
+  font-size: 1rem;
 }
 h1 {
   text-align: center;
@@ -34,9 +39,10 @@ summary {
 p {
   /*text-align: justify;*/
   /*text-justify: inter-word;*/
+  -webkit-text-size-adjust: 100%;
   color: white;
   font-family: Arial;
-  line-height: 1.2
+  line-height: 1.2;
 }
 
 li {
@@ -61,6 +67,8 @@ mark::selection {
 }
 
 a:link {
+  font-size: 1rem;
+  /* -webkit-text-size-adjust: 100%; */
   color: white;
   font-weight: bold;
 }
@@ -172,6 +180,7 @@ a:active {
 .bottomnav p{
   width: 100%;
   text-align: center;
+  font-size: 1rem;
 }
 
 .bottomnav a {
@@ -288,6 +297,11 @@ a.completelink:active {
 	  background-color: #313338;
 	  text-align: left;
 	}
+	
+	a:link {
+	  font-size: 2rem;
+	}
+	
     .container {
 	  margin-top: 100px;
 	  display: flex;
@@ -322,6 +336,24 @@ a.completelink:active {
 	  text-decoration: none;
 	}
 	
+	h1 {
+	  font-size: 4rem;
+	}
+
+	h2 {
+	  font-size: 3rem;
+	}
+
+	h3 {
+	  font-size: 2.6rem;
+	}
+	summary {
+	  font-size: 2.6rem;
+	}
+	p {
+	  font-size: 2rem;
+	}
+	
 	.text-container {
 	  text-align: left;
 	}
@@ -332,6 +364,10 @@ a.completelink:active {
 	.bottomnav a{
 	  font-size: 2rem;
 	}	
+	
+	.bottomnav p{
+	  font-size: 2rem;
+	}
 	
 	.horizontal_pic_container {
 	  margin-left: 0%;
