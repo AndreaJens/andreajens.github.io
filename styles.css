@@ -148,6 +148,18 @@ a:active {
   margin-right: 20%;
 }
 
+.screenshot_container {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.screenshot_container img {
+  width: 50%;
+  object-fit: contain;
+}
+
 .horizontal_pic_container {
   display: flex;
   justify-content: center;
