@@ -47,7 +47,7 @@ function addBottomBarNoName(linkPrevious, titlePrevious, linkNext, titleNext, ma
 	document.body.appendChild(div)
 }
 
-function addBottomAllLinks(mainText, linkPrevious, titlePrevious, linkNext, titleNext, indexLink, indexText){
+function addBottomAllLinksBackup(mainText, linkPrevious, titlePrevious, linkNext, titleNext, indexLink, indexText){
 	let linkElemPrev = document.createElement('a');
 	let anchorTextPrev = document.createTextNode('< PREVIOUS');
 	linkElemPrev.appendChild(anchorTextPrev);
@@ -78,7 +78,55 @@ function addBottomAllLinks(mainText, linkPrevious, titlePrevious, linkNext, titl
 	document.body.appendChild(div)
 }
 
-function addBottomAllLinksEnding(mainText, linkPrevious, titlePrevious, indexLink, indexText){
+function addBottomAllLinks(mainText, linkPrevious, titlePrevious, linkNext, titleNext, indexLink, indexText, linkFirst = "./first.html", titleFirst = "Back to the beginning", linkLast = "./last.html", titleLast = "Last published"){
+	let linkElemFirst = document.createElement('a');
+	let anchorTextFirst = document.createTextNode('<< FIRST');
+	linkElemFirst.appendChild(anchorTextFirst);
+	linkElemFirst.title = titleFirst;
+	linkElemFirst.href = linkFirst;
+	let linkElemPrev = document.createElement('a');
+	let anchorTextPrev = document.createTextNode('< PREVIOUS');
+	linkElemPrev.appendChild(anchorTextPrev);
+	linkElemPrev.title = titlePrevious;
+	linkElemPrev.href = linkPrevious;
+	let linkElemNext = document.createElement('a');
+	let anchorTextNext = document.createTextNode('    NEXT >');
+	linkElemNext.appendChild(anchorTextNext);
+	linkElemNext.title = titleNext;
+	linkElemNext.href = linkNext;
+	let div = document.createElement('div');
+	div.classList.add('bottomnav')
+	let linkElemIndex = document.createElement('a');
+	let anchorTextIndex = document.createTextNode('INDEX');
+	linkElemIndex.appendChild(anchorTextIndex);
+	linkElemIndex.title = indexText;
+	linkElemIndex.href = indexLink + "#TOC";
+	let linkElemLast = document.createElement('a');
+	let anchorTextLast = document.createTextNode('LAST >>');
+	linkElemLast.appendChild(anchorTextLast);
+	linkElemLast.title = titleLast;
+	linkElemLast.href = linkLast;
+	var paragraph = document.createElement("p");
+	var paragraph2 = document.createElement("p");
+	paragraph.textContent = mainText;
+	//paragraph.display = "block";
+	//paragraph.append(document.createElement('br'));
+	paragraph2.append(linkElemFirst);
+	paragraph2.append(linkElemPrev);
+	paragraph2.append(linkElemIndex);
+	paragraph2.append(linkElemNext);
+	paragraph2.append(linkElemLast);
+	div.append(paragraph);
+	div.append(paragraph2);
+	document.body.appendChild(div)
+}
+
+function addBottomAllLinksEnding(mainText, linkPrevious, titlePrevious, indexLink, indexText, linkFirst = "./first.html", titleFirst = "Back to the beginning"){
+	let linkElemFirst = document.createElement('a');
+	let anchorTextFirst = document.createTextNode('<< FIRST');
+	linkElemFirst.appendChild(anchorTextFirst);
+	linkElemFirst.title = titleFirst;
+	linkElemFirst.href = linkFirst;
 	let linkElemPrev = document.createElement('a');
 	let anchorTextPrev = document.createTextNode('< PREVIOUS');
 	linkElemPrev.appendChild(anchorTextPrev);
@@ -99,6 +147,7 @@ function addBottomAllLinksEnding(mainText, linkPrevious, titlePrevious, indexLin
 	paragraph.textContent = mainText;
 	//paragraph.display = "block";
 	//paragraph.append(document.createElement('br'));
+	paragraph2.append(linkElemFirst);
 	paragraph2.append(linkElemPrev);
 	paragraph2.append(linkElemIndex);
 	//paragraph2.append(linkElemNext);
@@ -107,7 +156,12 @@ function addBottomAllLinksEnding(mainText, linkPrevious, titlePrevious, indexLin
 	document.body.appendChild(div)
 }
 
-function addBottomAllLinksDummy(mainText, linkPrevious, titlePrevious, linkNext, titleNext, indexLink, indexText){
+function addBottomAllLinksDummy(mainText, linkPrevious, titlePrevious, linkNext, titleNext, indexLink, indexText, linkFirst = "./first.html", titleFirst = "Back to the beginning", linkLast = "./last.html", titleLast = "Last published"){
+	let linkElemFirst = document.createElement('a');
+	let anchorTextFirst = document.createTextNode('<< FIRST');
+	linkElemFirst.appendChild(anchorTextFirst);
+	linkElemFirst.title = titleFirst;
+	linkElemFirst.href = linkFirst;
 	let linkElemPrev = document.createElement('a');
 	let anchorTextPrev = document.createTextNode('< PREVIOUS');
 	linkElemPrev.appendChild(anchorTextPrev);
@@ -125,14 +179,21 @@ function addBottomAllLinksDummy(mainText, linkPrevious, titlePrevious, linkNext,
 	linkElemIndex.appendChild(anchorTextIndex);
 	linkElemIndex.title = indexText;
 	linkElemIndex.href = indexLink + "#TOC";
+	let linkElemLast = document.createElement('a');
+	linkElemLast.title = "Coming next week!";
+	linkElemLast.href = "#";
+	let anchorTextLast = document.createTextNode('(SOON) >>');
+	linkElemLast.appendChild(anchorTextLast);
 	var paragraph = document.createElement("p");
 	var paragraph2 = document.createElement("p");
 	paragraph.textContent = mainText;
 	//paragraph.display = "block";
 	//paragraph.append(document.createElement('br'));
+	paragraph2.append(linkElemFirst);
 	paragraph2.append(linkElemPrev);
 	paragraph2.append(linkElemIndex);
 	paragraph2.append(linkElemNext);
+	paragraph2.append(linkElemLast);
 	div.append(paragraph);
 	div.append(paragraph2);
 	document.body.appendChild(div)
