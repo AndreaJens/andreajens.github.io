@@ -1,8 +1,8 @@
 function addTopBar(sourceDir='./', activeElement=-1){
 	let div = document.createElement('div');
 	div.classList.add('topnav');
-	const elems = ["Home", "Racconti", "Giochi", "Contatti"];
-	const links = ["index.html", "tales.html", "games.html", "contacts.html"];
+	const elems = ["Home", "Racconti", "Giochi", "Blog", "Contatti"];
+	const links = ["index.html", "tales.html", "games.html", "blog.html", "contacts.html"];
 	for (let i = 0; i < elems.length; i++){
 		let linkElem = document.createElement('a');
 		let anchorText = document.createTextNode(elems[i]);
